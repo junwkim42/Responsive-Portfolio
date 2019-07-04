@@ -1,0 +1,201 @@
+.topwrap {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    vertical-align: text-bottom;
+}
+
+.bodywrap{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-auto-rows: minmax(80vh, auto);
+    margin: 0px;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/lilypads.png");
+    background-color: #cccccc;
+}
+
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.myname {
+    background-color: #4aaaa5;
+    padding: 10px;
+    display: inline;
+    color: #ffffff;
+    font-family: 'Lilita One', cursive;
+    font-size: 50px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.botalign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.sec {
+    grid-template-rows: 1fr 3fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#aboutme {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4aaaa5;
+    font-size: 25px;
+    font-weight: 300; 
+}
+.fimage{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    line-height: 20pt;
+}
+
+footer {
+    background-color: #666666;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+hr.blu {
+    color: #4aaaa5;
+    background-color: #4aaaa5;
+    height: 5px;
+    margin: 0px;
+}
+
+input.info {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+input.msg {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input.btn {
+    width: 100px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px;
+    position: relative;
+    text-align: center;
+  }
+
+  .txtbox {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #4aaaa5;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 200;
+  }
+
+.container {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+}
+
+#fleft{
+    width: 200px;
+    height: 200px;
+    float:left;
+    margin: 10px;
+}
+
+#pimage{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 980px){
+    .topwrap{
+        display: grid;
+        grid-template-columns: 5% 45% 45% 5%;   
+    }
+    .bodywrap{
+        display: grid;
+        grid-template-columns: 5% 70% 25%;
+    }
+}
+@media screen and (max-width: 768px){
+    .topwrap{
+        display: grid;
+        grid-template-columns: 2% 51% 45% 2%;   
+    }
+    .bodywrap{
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+    }
+}
+@media screen and (max-width: 640px){
+    .topwrap{
+        display: block; 
+    }
+    .nested {
+        display: inline-flex;
+        vertical-align: text-bottom;
+        padding:8px;
+    }
+    .bodywrap{
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+        grid-auto-rows: minmax(90vh, auto);
+    }
+    .sec {
+        grid-template-rows: 1fr 3fr;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .portfolio {
+        display: block;
+      }
+    #fleft{
+        width: auto;
+        margin: 0 auto;
+        display: block;
+        float: none;
+    }
+}
